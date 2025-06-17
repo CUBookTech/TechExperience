@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="sketch"></canvas>
+
+            <div class="overlay-content">
+                <h1 class="title" id="titleText">Welcome to the CU Book Store<br>Tech Experience.</h1>
+                <br>
+                <div class="rowBoys">
+                     <div id="gameButton">
+                       
+                        <button class="gameButton" onclick="launchGame(1)">
+                             <img class="gameIcon" src="https://userstyles.org/style_screenshots/250841_after.png?r=1749312004">
+                        </button>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" onclick="launchGame(2)">
+                            <img class="gameIcon" id="mc" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c7/Grass_Block.png/revision/latest?cb=20230226144250">
+                        </button>
+                    </div>
+                    <div id="gameButton">
+                         <button class="gameButton" onclick="launchGame(3)">
+                            <img class="gameIcon" id="bs" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Beat_Saber_Logo.png">
+                         </button>
+                        
+                    </div>
+                </div>
+               
+            </div>
+<br><br><br><br><br>
+                <h1 class="title" id="waitBro" style="padding-top: 50%; display: none;">Be patient, you're already launching a game!</h1>
+            
+        </div>
+        
+
+        <script src="dots.js"></script>
+        <script src="animate.js"></script>
+        <script src="gameLauncher.js"></script>
+    </body>
+</html>

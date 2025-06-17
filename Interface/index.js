@@ -5,7 +5,7 @@ const createWindow = () => {
   const win = new BrowserWindow({
    fullscreen: true,
    webPreferences: {
-      preload: "C:\\Users\\CUBS Customer\\Documents\\TechExp\\preload.js",//path.join(__dirname, 'preload.js')
+      preload: "C:\\Users\\CUBS Customer\\Documents\\TechExp\\preload.js",//path.join(__dirname, 'preload.js'), // important!
       contextIsolation: true,
       nodeIntegration: true,
     },
@@ -16,6 +16,7 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow();
+  //LaunchExe();
 })
 
 
