@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="sketch"></canvas>
+
+           
+            <div class="overlay-content">
+                <br /><br /><br />
+                <h1 class="title" id="titleText">Welcome to the CU Book Store<br>Tech Experience.</h1>
+                <br>
+                <div class="rowBoys">
+                    <div id="gameButton">
+
+                        <button class="gameButton" onclick="launchGame(1)">
+                            <img class="gameIcon" src="https://userstyles.org/style_screenshots/250841_after.png?r=1749312004">
+                        </button>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" id="mc" onclick="launchGame(2)">
+                            <img class="gameIcon" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c7/Grass_Block.png/revision/latest?cb=20230226144250">
+                        </button>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" onclick="launchGame(3)">
+                            <img class="gameIcon" id="bs" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Beat_Saber_Logo.png">
+                        </button>
+                        <h3 class="vrLabel">VR</h3>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" onclick="launchGame(4)">
+                            <img class="gameIcon" id="ge" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Google_Earth_Icon.png">
+                        </button>
+                        <h3 class="vrLabel">VR</h3>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+
+                <div class="rowBoys">
+                    <div id="gameButton">
+                        <button class="gameButton" id="sub" onclick="launchGame(5)">
+                            <img class="gameIcon" src="https://upload.wikimedia.org/wikipedia/en/6/6d/Subnautica_cover_art.png">
+                        </button>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" onclick="launchGame(6)">
+                            <img class="gameIcon" id="rec" src="https://static1.squarespace.com/static/582e7271bebafbd72792bd97/t/6284142cae168034842ffaf0/1750736670111/">
+                        </button>
+                        <h3 class="vrLabel">VR</h3>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" id="lab" onclick="launchGame(7)">
+                            <img class="gameIcon" src="https://cdn2.steamgriddb.com/grid/71f4472c8045752f627d650e100b28af.png">
+                        </button>
+                        <h3 class="vrLabel">VR</h3>
+                    </div>
+                    <div id="gameButton">
+                        <button class="gameButton" onclick="launchGame(8)">
+                            <img class="gameIcon" id="rol" src="https://yt3.googleusercontent.com/eRe03JOU-TA3Q9uIRLAtMWJN0SzoGHs3HfJt9LrmOxVxPcFOI96_is06juAsyuhIdj0F7rDOIw=s900-c-k-c0x00ffffff-no-rj">
+                        </button>
+                        <h3 class="vrLabel">VR</h3>
+                    </div>
+                </div>
+
+                </div>
+                <br><br><br><br><br>
+                <h1 class="title" id="waitBro" style="padding-top: 50%; display: none;">Be patient, you're already launching a game!</h1>
+
+            </div>
+        
+
+        <script src="dots.js"></script>
+        <script src="animate.js"></script>
+        <script src="gameLauncher.js"></script>
+    </body>
+</html>
