@@ -1,0 +1,168 @@
+body {
+      background-color: black;
+      height: 100vh;
+    }
+
+    #sketch {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+
+      
+    }
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+.title {
+    text-align: center;
+    color: RGB(255,255,255);
+    font-family: "Consolas";
+    margin-top: -15%;
+    font-size: 50px;
+}
+
+.title::after {
+     content: '|';
+  animation: blink 1s linear infinite;
+  margin-left: 0.2em;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes buttonHover {
+    from {background-color: rgb(32, 32, 32);
+    width: 190px;
+    height: 110px;
+    }
+    to {background-color: rgb(70, 70, 70);;
+    width: 200px;
+    height: 120px;
+    }
+}
+
+#gameButton {
+    width: 190px;
+    height: 110px;
+    background-color:  rgb(32, 32, 32);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-transition: width 0.5s;
+    -webkit-transition: height 0.5s;
+    outline-style: solid;
+    outline-color: rgb(70,70,70);
+    outline-width: 1px;
+}
+
+#gameButton:hover {
+    animation: buttonHover 0.5s;
+    background-color: rgb(70, 70, 70);
+    -webkit-transition: width 0.5s;
+    -webkit-transition: height 0.5s;
+    width: 200px;
+    height: 120px;
+    
+}
+
+.gameButton {
+  height: 100%;
+   background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.gameIcon {
+    width: 85%;
+    height: 75%;
+    padding-left: 22%;
+    padding-top: 10%;
+}
+
+.vrLabel {
+    color: white;
+    font-family: "Consolas";
+    text-align: center;
+    text-decoration: underline;
+    margin-top: -25%;
+}
+
+#bs {
+    width: 100%;
+    margin-left: -22%;
+    margin-top: -5%;
+}
+
+#ge {
+    height: 67%;
+    margin-left: 5%;
+    margin-top: -17%;
+}
+
+#mc {
+    width: 80%;
+    margin-top: 2%;
+    height: 90%;
+}
+
+#sub {
+   margin-left: 5%;
+}
+
+#rec {
+    margin-top: -10%;
+}
+
+#lab {
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Put canvas at the bottom */
+}
+
+.rowBoys {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Higher than canvas */
+  width: 100%;
+  height: 100%;
+  display: flex;           /* Optional: center content */
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;    /* Make buttons clickable */
+  color: white;            /* Contrast with background */
+  flex-direction: column;
+}

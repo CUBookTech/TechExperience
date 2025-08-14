@@ -1,0 +1,18 @@
+{
+  "name": "techexp",
+  "version": "1.0.0",
+  "description": "hey",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "electron": "^36.4.0"
+  }
+}
